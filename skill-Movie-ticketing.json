@@ -1,0 +1,1125 @@
+{
+  "intents": [
+    {
+      "intent": "Book_ticket",
+      "examples": [
+        {
+          "text": "Give me movie ticket"
+        },
+        {
+          "text": "Please book my ticket"
+        },
+        {
+          "text": "Reserve movie ticket"
+        },
+        {
+          "text": "Reserve some seats for movie"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Enquiry",
+      "examples": [
+        {
+          "text": "I wants to see movie"
+        },
+        {
+          "text": "time"
+        },
+        {
+          "text": "What is timing of"
+        },
+        {
+          "text": "Which English movie is available?"
+        },
+        {
+          "text": "Which hindi movie is availabe?"
+        },
+        {
+          "text": "Which movies are available?"
+        },
+        {
+          "text": "which shows are available?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Greeting",
+      "examples": [
+        {
+          "text": "Good After Noon"
+        },
+        {
+          "text": "Good Evening"
+        },
+        {
+          "text": "Good Morning"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Hey"
+        },
+        {
+          "text": "Hi"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Location",
+      "examples": [
+        {
+          "text": "Ajmer"
+        },
+        {
+          "text": "Ghaziabad"
+        },
+        {
+          "text": "Mumbai"
+        },
+        {
+          "text": "New Delhi"
+        },
+        {
+          "text": "Noida"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Movie_name",
+      "examples": [
+        {
+          "text": "Dangal"
+        },
+        {
+          "text": "Krish"
+        },
+        {
+          "text": "Robot"
+        },
+        {
+          "text": "Thappad"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "Book_ticket",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Book",
+          "synonyms": [
+            "Reserve"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "City_name",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Ajmer",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Mumbai",
+          "synonyms": [
+            "bombay"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "NCR",
+          "synonyms": [
+            "Ghaziabad",
+            "Noida"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "New Delhi",
+          "synonyms": [
+            "Delhi"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Enquiry",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Movies",
+          "synonyms": [
+            "Movie",
+            "Show"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Time",
+          "synonyms": [
+            "Timing"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Greeting",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Good After Noon",
+          "synonyms": [
+            "GA"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good Evening",
+          "synonyms": [
+            "GE"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good Morning",
+          "synonyms": [
+            "GM"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Hi",
+          "synonyms": [
+            "Hello"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Language",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "English",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Hindi",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Movie_name",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Dangal",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Krish",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Robot",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Tanhaji: The Unsung Warrior",
+          "synonyms": [
+            "Tanhaji"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Thappad",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "The Pickup Artist",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Newdelhi_Cinema",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "PVR Vikas puri",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "payment",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Cash on delivery",
+          "synonyms": [
+            "cod"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Credit card",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Debit card",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "UPI",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-date",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-time",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Time",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "10:00AM",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "11:30 AM",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "12:20 PM",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "2:00 PM",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "2:30 PM",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "3:30PM",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "6:20 PM",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8:00 AM",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_4_1602750231268",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1602754736721",
+      "context": {
+        "Movie_time": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_10_1602754736722"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1603088762372",
+      "context": {
+        "movie_date": "@sys-date"
+      },
+      "conditions": "@sys-date",
+      "event_name": "input",
+      "dialog_node": "handler_10_1603088762382"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1602951297047",
+      "conditions": "@Movie_name:Thappad",
+      "event_name": "filled",
+      "dialog_node": "handler_10_1603951260233",
+      "previous_sibling": "handler_1_1603951239318"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Which movie you want to see?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_4_1602753358854",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1602753358868",
+      "previous_sibling": "handler_4_1602753358868"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "6:00 PM",
+                "value": {
+                  "input": {
+                    "text": "6:00 PM"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_2_1602951297047",
+      "conditions": "@Movie_name:Krish",
+      "event_name": "filled",
+      "dialog_node": "handler_1_1603102035836",
+      "previous_sibling": "handler_8_1603091107684"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "",
+            "options": [],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_4_1603901387664",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1603901387666",
+      "previous_sibling": "handler_8_1603901387666"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "Select suitable time for movie: $Movie_name",
+            "options": [
+              {
+                "label": "10:00 AM     [$10am_dangal\\-]          Availability: $10am_dangal_AL",
+                "value": {
+                  "input": {
+                    "text": "10:00 AM"
+                  }
+                }
+              },
+              {
+                "label": "12:20 PM       [$1220pm_dangal\\-]          Availability: $1220pm_dangal_AL",
+                "value": {
+                  "input": {
+                    "text": "12:20 PM"
+                  }
+                }
+              },
+              {
+                "label": "4:00 PM         [$4pm_dangal\\-]          Availability: $4pm_dangal_AL",
+                "value": {
+                  "input": {
+                    "text": "4:00 PM"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_2_1602951297047",
+      "context": {
+        "4pm_dangal": 180,
+        "10am_dangal": 200,
+        "1220pm_dangal": 150,
+        "4pm_dangal_AL": 190,
+        "10am_dangal_AL": 180,
+        "1220pm_dangal_AL": 200
+      },
+      "conditions": "@Movie_name:Dangal",
+      "event_name": "filled",
+      "dialog_node": "handler_1_1603951239318",
+      "previous_sibling": "handler_1_1603102035836"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1602753518820",
+      "context": {
+        "movie_date": "@sys-date"
+      },
+      "conditions": "@sys-date",
+      "event_name": "input",
+      "dialog_node": "handler_2_1602753518822"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1602951297047",
+      "context": {
+        "Movie_name": "@Movie_name"
+      },
+      "conditions": "@Movie_name",
+      "event_name": "input",
+      "dialog_node": "handler_2_1602951297083"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1602753358854",
+      "context": {
+        "Movie_name": "@Movie_name"
+      },
+      "conditions": "@Movie_name",
+      "event_name": "input",
+      "dialog_node": "handler_4_1602753358868"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "How many ticket you wants?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_4_1602754824653",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1602754824656",
+      "previous_sibling": "handler_8_1602754824656"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1602951297047",
+      "conditions": "@Movie_name:(Tanhaji: The Unsung Warrior)",
+      "event_name": "filled",
+      "dialog_node": "handler_6_1603951271633",
+      "previous_sibling": "handler_10_1603951260233"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1602951297047",
+      "conditions": "@Movie_name:(The Pickup Artist)",
+      "event_name": "filled",
+      "dialog_node": "handler_6_1603951300537",
+      "previous_sibling": "handler_6_1603951271633"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Please enter preferred time"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_4_1602754736721",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1602754736722",
+      "previous_sibling": "handler_10_1602754736722"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "Please select a date",
+            "options": [
+              {
+                "label": "29-10-2020",
+                "value": {
+                  "input": {
+                    "text": "29-10-2020"
+                  }
+                }
+              },
+              {
+                "label": "30-10-2020",
+                "value": {
+                  "input": {
+                    "text": "30-10-2020"
+                  }
+                }
+              },
+              {
+                "label": "31-10-2020",
+                "value": {
+                  "input": {
+                    "text": "31-10-2020"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_5_1603088762372",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1603088762382",
+      "previous_sibling": "handler_10_1603088762382"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1602754824653",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_8_1602754824656"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "Select suitable time for movie: $Movie_name",
+            "options": [
+              {
+                "label": "2:00 PM     [$2pm_robot\\-]          Availability: $2pm_robot_AL",
+                "value": {
+                  "input": {
+                    "text": "2:00 PM"
+                  }
+                }
+              },
+              {
+                "label": "4:00 PM     [$4pm_robot\\-]         Availability: $4pm_robot_AL",
+                "value": {
+                  "input": {
+                    "text": "4:00 PM"
+                  }
+                }
+              },
+              {
+                "label": "7:00 PM     [$7pm_robot\\-]         Availability: $7pm_robot_AL  ",
+                "value": {
+                  "input": {
+                    "text": "7:00 PM"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_2_1602951297047",
+      "context": {
+        "2pm_robot": 150,
+        "4pm_robot": 200,
+        "7pm_robot": 250,
+        "Movie_time": "@sys-time",
+        "2pm_robot_AL": 300,
+        "4pm_robot_AL": 300,
+        "7pm_robot_AL": 300
+      },
+      "conditions": "@Movie_name:Robot",
+      "event_name": "filled",
+      "dialog_node": "handler_8_1603091107684",
+      "previous_sibling": "handler_9_1602951297083"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1603901387664",
+      "context": {
+        "Movie_time": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_8_1603901387666"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "Select suitable date for movie",
+            "options": [
+              {
+                "label": "29-10-2020",
+                "value": {
+                  "input": {
+                    "text": "29-10-2020"
+                  }
+                }
+              },
+              {
+                "label": "30-10-2020",
+                "value": {
+                  "input": {
+                    "text": "30-10-2020"
+                  }
+                }
+              },
+              {
+                "label": "31-10-2020",
+                "value": {
+                  "input": {
+                    "text": "31-10-2020"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_7_1602753518820",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1602753518822",
+      "previous_sibling": "handler_2_1602753518822"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "Please select movie",
+            "options": [
+              {
+                "label": "Tanhaji: The Unsung Warrior",
+                "value": {
+                  "input": {
+                    "text": "Tanhaji: The Unsung Warrior"
+                  }
+                }
+              },
+              {
+                "label": "The Pickup Artist",
+                "value": {
+                  "input": {
+                    "text": "The Pickup Artist"
+                  }
+                }
+              },
+              {
+                "label": "Robot",
+                "value": {
+                  "input": {
+                    "text": "Robot"
+                  }
+                }
+              },
+              {
+                "label": "Krish",
+                "value": {
+                  "input": {
+                    "text": "Krish"
+                  }
+                }
+              },
+              {
+                "label": "Dangal",
+                "value": {
+                  "input": {
+                    "text": "Dangal"
+                  }
+                }
+              },
+              {
+                "label": "Thappad",
+                "value": {
+                  "input": {
+                    "text": "Thappad"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_2_1602951297047",
+      "context": {},
+      "event_name": "focus",
+      "dialog_node": "handler_9_1602951297083",
+      "previous_sibling": "handler_2_1602951297083"
+    },
+    {
+      "type": "standard",
+      "title": "Greeting",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Greeting || @Greeting",
+      "dialog_node": "node_4_1602698882023",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "frame",
+      "title": "Movie booking details",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you. Your request for booking tickets of the $Movie_name on $movie_date at $Movie_time for $number people has been processed successfully. You will receive tickets soon"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {},
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "#Book_ticket && @Book_ticket",
+      "dialog_node": "node_4_1602750231268",
+      "previous_sibling": "node_6_1602751382911"
+    },
+    {
+      "type": "frame",
+      "title": "Enquiry ",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1602750231268"
+      },
+      "conditions": "#Enquiry && @Enquiry",
+      "dialog_node": "node_6_1602751382911",
+      "previous_sibling": "node_4_1602698882023"
+    },
+    {
+      "type": "standard",
+      "title": "Delete context",
+      "output": {
+        "deleted": "<?context.remove('movie_date')?><?context.remove('Movie_name')?><?context.remove('Movie_time')?><?context.remove('number')?>",
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1602750231268",
+      "conditions": "true",
+      "dialog_node": "node_9_1603909863714"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Morning"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1602698882023",
+      "conditions": "@Greeting:(Good Morning)",
+      "dialog_node": "response_1_1602750030456"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1602750231268",
+      "disabled": true,
+      "dialog_node": "response_2_1602753043418",
+      "previous_sibling": "slot_4_1602754824653"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1602751382911",
+      "dialog_node": "response_6_1603876672532"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Afternoon"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1602698882023",
+      "conditions": "@Greeting:(Good After Noon)",
+      "dialog_node": "response_7_1602750091580",
+      "previous_sibling": "response_8_1602750065551"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Evening"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1602698882023",
+      "conditions": "@Greeting:(Good Evening)",
+      "dialog_node": "response_8_1602750065551",
+      "previous_sibling": "response_1_1602750030456"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1602698882023",
+      "conditions": "@Greeting:Hi",
+      "dialog_node": "response_9_1602750119829",
+      "previous_sibling": "response_7_1602750091580"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_6_1602751382911",
+      "variable": "$Movie_name",
+      "dialog_node": "slot_2_1602951297047",
+      "previous_sibling": "slot_5_1603088762372"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1602750231268",
+      "variable": "$Movie_name",
+      "dialog_node": "slot_4_1602753358854",
+      "previous_sibling": "slot_7_1602753518820"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1602750231268",
+      "variable": "$Movie_time",
+      "dialog_node": "slot_4_1602754736721",
+      "previous_sibling": "slot_4_1602753358854"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1602750231268",
+      "variable": "$number",
+      "dialog_node": "slot_4_1602754824653",
+      "previous_sibling": "slot_4_1602754736721"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_6_1602751382911",
+      "variable": "$Movie_time",
+      "dialog_node": "slot_4_1603901387664",
+      "previous_sibling": "slot_2_1602951297047"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_6_1602751382911",
+      "variable": "$movie_date",
+      "dialog_node": "slot_5_1603088762372",
+      "previous_sibling": "response_6_1603876672532"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_4_1602750231268",
+      "variable": "$movie_date",
+      "dialog_node": "slot_7_1602753518820",
+      "previous_sibling": "node_9_1603909863714"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. I am Movie ticketing bot. How can I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Movie ticketing",
+  "language": "en",
+  "description": ""
+}
